@@ -1,6 +1,6 @@
 fn main() {
     let mut args = std::env::args();
-    let _program = args.next();
+    let _program: Option<String> = args.next();
 
     match args.next().as_deref() {
         Some("day01") | Some("day-01") => lessons::day01::run(),
