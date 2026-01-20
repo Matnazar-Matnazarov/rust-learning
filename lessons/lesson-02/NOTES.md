@@ -68,6 +68,13 @@ Ko‘p uchraydigan amallar:
 - `format!` bilan string yig‘ish
 - `split_whitespace` bilan bo‘lish
 
+Amaliy methodlar (tez-tez ishlatiladi):
+
+- `trim()` — bosh/oxirdagi bo‘sh joylarni olib tashlaydi
+- `starts_with(..)`, `contains(..)` — qidirish
+- `join(..)` — `Vec<&str>` yoki `Vec<String>` ni birlashtirish
+- `as_bytes()` — baytlar bilan ishlash (UTF-8)
+
 ## 6) Dict: `HashMap<K, V>`
 
 Rust’da “dict” ga mos tur: `std::collections::HashMap`.
@@ -78,6 +85,12 @@ Asosiy amallar:
 - `get(&k)`
 - `entry(k).or_insert(v)` — mavjud bo‘lmasa qo‘shish
 
+Amaliy patternlar:
+
+- `entry(k).and_modify(|v| ...).or_insert(x)` — mavjud bo‘lsa update, bo‘lmasa insert
+- `remove(&k)` — o‘chirish
+- `keys()`, `values()` — key/value iteratsiya
+
 ## 7) Set: `HashSet<T>`
 
 Rust’da “set” ga mos tur: `std::collections::HashSet`.
@@ -86,8 +99,21 @@ Rust’da “set” ga mos tur: `std::collections::HashSet`.
 - `contains`
 - `remove`
 
+Set operations:
+
+- `union(&other)`
+- `intersection(&other)`
+- `difference(&other)`
+
 ## 8) Mashqlar
 
 - `Vec<i32>` yarating, 10 ta element qo‘shing, juftlarini filter qilib chiqaring.
 - `HashMap<&str, u32>` qilib “so‘z -> count” qiling (oddiy word count).
 - `matrix` yig‘indisini hisoblang.
+
+Qo‘shimcha mashqlar:
+
+- `Vec<i32>` ustida `sort()` + `dedup()` ishlatib, unique list oling.
+- `Vec<i32>` ustida `retain()` bilan faqat musbat elementlarni qoldiring.
+- Matritsani (2D) `flat_map` bilan 1D ga tekislang.
+- `HashSet` bilan union/intersection/difference natijalarini chiqaring.
