@@ -7,6 +7,7 @@ Bu papkada Rust bo‘yicha darslar darsma-dars (lesson-based) formatda joylashti
 - `lesson-01/` — Kirish: `cargo`, o‘zgaruvchilar, `mut`, shadowing, turlar
 - `lesson-02/` — Collections: array, matrix, `Vec`, `String`, `HashMap`, `HashSet`
 - `lesson-03/` — Ownership & borrowing: move/copy, references, `&str`, slices
+- `lesson-04/` — Control flow: `if`, loops, `match`, `Option`/`Result`
 
 ## How to run code
 
@@ -28,4 +29,10 @@ Lesson 03 (day03) ni ishga tushirish:
 
 ```bash
 cargo run -- day03
+```
+
+Lesson 04 (day04) ni ishga tushirish:
+
+```bash
+cargo run -- day04
 ```
