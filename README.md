@@ -39,3 +39,4 @@ Umumiy indeks: `lessons/README.md`
  - Har bir lesson uchun `lessons/lesson-XX/NOTES.md`ni o‘qing
  - Vazifalarni bajaring
  - Kerak bo‘lsa code’ni kichik commit’lar bilan kiriting
+
