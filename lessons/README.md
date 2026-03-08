@@ -10,6 +10,7 @@ Bu papkada Rust bo‘yicha darslar darsma-dars (lesson-based) formatda joylashti
 - `lesson-04/` — Control flow: `if`, loops, `match`, `Option`/`Result`
 - `lesson-05/` — Structs & `impl`: methods, constructors, data modeling
 - `lesson-06/` — Enums, Pattern Matching, `?` operatori
+- `lesson-07/` — Traits & Generics: interfeyslar, generic turlar, trait bounds
 
 ## How to run code
 
@@ -49,4 +50,10 @@ Lesson 06 (day06) ni ishga tushirish:
 
 ```bash
 cargo run -- day06
+```
+
+Lesson 07 (day07) ni ishga tushirish:
+
+```bash
+cargo run -- day07
 ```

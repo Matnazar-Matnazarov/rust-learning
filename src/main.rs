@@ -9,6 +9,7 @@ fn main() {
         Some("day04") | Some("day-04") => lessons::day04::run(),
         Some("day05") | Some("day-05") => lessons::day05::run(),
         Some("day06") | Some("day-06") => lessons::day06::run(),
+        Some("day07") | Some("day-07") => lessons::day07::run(),
         Some("help") | Some("--help") | Some("-h") => print_help(),
         Some(other) => {
             eprintln!("Unknown command: {other}");
@@ -28,4 +29,5 @@ fn print_help() {
     println!("  cargo run -- day04");
     println!("  cargo run -- day05");
     println!("  cargo run -- day06");
+    println!("  cargo run -- day07");
 }
