@@ -148,8 +148,8 @@ fn generics_demo() {
     let pair1 = Pair::new(1, 2);
     let pair2 = Pair::new("hello", "world");
 
-    println!("Pair 1: {:?}", pair1);
-    println!("Pair 2: {:?}", pair2);
+    println!("Pair 1: first={}, second={}", pair1.first, pair1.second);
+    println!("Pair 2: first={}, second={}", pair2.first, pair2.second);
 }
 
 fn max<T: PartialOrd>(a: T, b: T) -> T {
@@ -186,6 +186,7 @@ fn trait_bounds_demo() {
     notify(&tweet);
 
     println!("Article default: {}", article.default_summary());
+    println!("Article content preview: {}...", &article.content[..20.min(article.content.len())]);
 }
 
 fn notify<T: Summary>(item: &T) {
@@ -228,6 +229,7 @@ fn default_methods_demo() {
 
     println!("Summary: {}", article.summarize());
     println!("Default summary: {}", article.default_summary());
+    println!("Full article content: {}", article.content);
 }
 
 fn container_generic() {
