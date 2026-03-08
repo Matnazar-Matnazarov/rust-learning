@@ -31,6 +31,9 @@
 - Lesson 02: `lessons/lesson-02/NOTES.md`
 - Lesson 03: `lessons/lesson-03/NOTES.md`
 - Lesson 04: `lessons/lesson-04/NOTES.md`
+- Lesson 05: `lessons/lesson-05/NOTES.md`
+- Lesson 06: `lessons/lesson-06/NOTES.md`
+- Lesson 07: `lessons/lesson-07/NOTES.md`
 
 Umumiy indeks: `lessons/README.md`
  

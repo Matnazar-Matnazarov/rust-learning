@@ -8,6 +8,9 @@ Bu papkada Rust bo‘yicha darslar darsma-dars (lesson-based) formatda joylashti
 - `lesson-02/` — Collections: array, matrix, `Vec`, `String`, `HashMap`, `HashSet`
 - `lesson-03/` — Ownership & borrowing: move/copy, references, `&str`, slices
 - `lesson-04/` — Control flow: `if`, loops, `match`, `Option`/`Result`
+- `lesson-05/` — Structs & `impl`: methods, constructors, data modeling
+- `lesson-06/` — Enums, Pattern Matching, `?` operatori
+- `lesson-07/` — Traits & Generics: interfeyslar, generic turlar, trait bounds
 
 ## How to run code
 
@@ -35,4 +38,22 @@ Lesson 04 (day04) ni ishga tushirish:
 
 ```bash
 cargo run -- day04
+```
+
+Lesson 05 (day05) ni ishga tushirish:
+
+```bash
+cargo run -- day05
+```
+
+Lesson 06 (day06) ni ishga tushirish:
+
+```bash
+cargo run -- day06
+```
+
+Lesson 07 (day07) ni ishga tushirish:
+
+```bash
+cargo run -- day07
 ```
